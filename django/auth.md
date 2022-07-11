@@ -52,4 +52,23 @@ PASSWORD_HASHERS = [
 ```python
 authenticate(request=None, **credentials)¶
 ```
+## Permissions and authorization
 
+Django comes with a built-in permissions system. It provides a way to assign permissions to specific users and groups of users.
+
+Permissions can be set not only per type of object, but also per specific object instance. By using the has_view_permission(), has_add_permission(), has_change_permission() and has_delete_permission() methods provided by the ModelAdmin class, it is possible to customize permissions for different object instances of the same type.
+
+
+### Programmatically creating permissions
+```python
+from myapp.models import BlogPost
+from django.contrib.auth.models import Permission
+from django.contrib.contenttypes.models import ContentType
+
+content_type = ContentType.objects.get_for_model(BlogPost)
+permission = Permission.objects.create(
+    codename='can_publish',
+    name='Can Publish Posts',
+    content_type=content_type,
+)
+```
