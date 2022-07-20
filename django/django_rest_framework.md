@@ -1,5 +1,24 @@
-# Django Rest framework
+# Django Rest Framework
 Wrapper over django to create **API**
+
+## REST API
+Representational state transfer are set of constraints for making web services.
+REST is preferred over SOAP(Simple Object Access Protocol).
+
+## Architectural Constraints of RESTful API:
+ There are six architectural constraints which makes any web service are listed below:
+
+- Uniform Interface
+- Stateless
+- Cacheable
+- Client-Server
+- Layered System
+- Code on Demand
+
+## Working
+
+1. Request sent from client to server in form of URL as HTTP GET, POST, PUT, DELETE
+2. Response of server in HTML, JSON, XML, Image.
 
 ## Three Stages before creating an API:
 
@@ -7,7 +26,7 @@ Wrapper over django to create **API**
 2. Rendering this data to the view.
 3. Creating URL for mapping to the viewset.
 
-Assuming you have install djangorestframework 
+Assuming you have to install djangorestframework 
 ```
 pip install djangorestframework
 ```
