@@ -38,7 +38,7 @@ You can also order by query expressions by calling asc() or desc() on the expres
  Returns a new QuerySet that uses SELECT DISTINCT in its SQL query. This eliminates duplicate rows from the query results.
 
  ## values()
-Returns a QuerySet that returns dictionaries, rather than model instances, when used as an iterable.
+Returns a QuerySet that returns dictionaries, rather than model instances, when used as an **iterable**.
 
 Each of those dictionaries represents an object, with the keys corresponding to the attribute names of model objects.
  ```python 
