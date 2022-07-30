@@ -40,4 +40,4 @@
 
 
 12. **Admin Processes** - Run admin/management tasks as one-off processes
-
+**python manage.py migrate** should be a part of the code.
