@@ -4,11 +4,12 @@ Wrapper over django to create **API**
 ## REST API
 Representational state transfer are set of constraints for making web services.
 REST is preferred over SOAP(Simple Object Access Protocol).
+**The state represenation in not managed by the server. In REST, the client must include all information for the server to fulfill the request whether as a part of query params, headers or URI.**
 
 ## Architectural Constraints of RESTful API:
  There are six architectural constraints which makes any web service are listed below:
 
-- Uniform Interface
+- Uniform Interface 
 - Stateless
 - Cacheable
 - Client-Server

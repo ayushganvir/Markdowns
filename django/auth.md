@@ -35,6 +35,12 @@ The most direct way to create users is to use the included create_user() / creat
 
 ## Passwords
 Django does not store raw (clear text) passwords on the user model, but only a hash.
+Changing passwords programmatically can be done by the helper function set_password():
+
+```python
+u = User.objects.get(username='john')
+u.set_password('new password')
+```
 Django provides a flexible password storage system and uses PBKDF2 by default.
 
 Password is saved as:
